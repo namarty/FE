@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    
+    <link rel="stylesheet" href="again.css">
+    
+</head>
+<body>
+    <div class="header contents">
+        <div class="contents">
+            
+            <div class="right">
+                <span class="i"><i class="xi-bars xi-3x"></i></span>
+                
+                <ul class="menu">
+                    <li><a href="again.html">HOME</a></li>
+                    <li ><a href="about.html">ABOUT GOGUMA</a></li>
+                    <li ><a href="recipe.html">RECIPE</a></li>
+                    <li ><a href="sell.html">SELL</a></li>
+
+                    
+
+                </ul>
+            </div>
+        </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.querySelector('.i');
+      const navMenu = document.querySelector('.menu');
+  
+      menuIcon.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+    
+    <!--login-->
+
+    <div class="log">
+        <form action="">
+           <a href="again.html"><i class="xi-angle-up"></i></a>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="ID" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="PASSWORD" required>
+            </div>
+
+            <div class="save">
+                <label for=""><input type="checkbox">Save Id</label>
+            </div>
+            <button type="submit" class="loginbtn">Login</button>
+            <div class="find">
+                <p>find Id | find password | join membership</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,605 @@
+body{margin: 0; padding: 0;}
+
+/*첫번째 창*/
+a{color: inherit; text-decoration: none;}
+#main h1,p{margin: 0;}
+#main{
+    
+    background-image: url(다운로드.jpg)
+    no-repeat; background-size: cover;
+    background-position: center center;
+    width: 100vw; height: 100vh;
+    font-family: 'Questrial', sans-serif;
+    background-color: rgba(0, 0, 0, 5);
+}
+#contents{
+    color: white; text-align: center;
+    position: absolute; width: 100%;
+    top: 50%;
+}
+#contents h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px gainsboro;
+}
+#contents p{
+    font-size:23px; margin-bottom: 16px;color: white;
+}
+#contents a{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 17px; font-weight: bold; color: black;
+}
+
+#contents a:hover {color: gray;}
+@media(max-width: 769px){
+    #contents h1{
+        font-size: 50px;
+    }
+    #contents p{
+        font-size:20px;
+    }
+}
+
+
+/*nav*/
+.header{position: fixed; z-index: 10;}
+.header .menu{display: flex;
+	justify-content: space-around; 
+	font-size:20px;	
+	font-weight: bold;list-style: none;
+    font-family: 'Questrial', sans-serif;
+    
+}
+  .i{display: none;}
+  .xi-bars {display: none;}
+
+  .menu a:hover{color:rgb(152, 148, 148); }
+  .barbtn{display: none;}
+
+@media(max-width:980px){
+    .box{display: none;}
+    
+}
+
+@media (max-width: 680px){
+    
+    .header .contents{height:40px;flex-direction: column;
+        align-items: center; }
+    .xi-bars {display: block;
+        position: fixed;
+        right:0;
+        z-index: 30;
+        cursor: pointer;
+    }
+    .contents .menu {display: none;    
+    }
+    .i{display: block; 
+    position: absolute;}
+    .barbtn{display: block; 
+        position: absolute;}
+    .box{display: none;}
+    
+    .menu.active{display: flex; flex-direction: column;}
+
+    /*.header .contents .right{flex:1; opacity: 1;}*/
+
+    .contents .menu.active{
+        display: flex;
+        flex-direction: column;
+        height:400px;
+        background-color: white; 
+    }    
+   
+}
+
+  
+
+/*main*/
+a{color: inherit; text-decoration: none;}
+#main h1,p{margin: 0;}
+#main{
+    background:url(sweet-potato.jpg.jpg) 
+    no-repeat; background-size: cover;
+    background-position: center center;
+    width: 100vw; height: 100vh;
+    font-family: 'Questrial', sans-serif;
+    
+}
+#contents{
+    color: white; text-align: center;
+    position: absolute; width: 100%;
+    top: 50%;
+}
+#contents h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom: 16px;
+}
+#contents p{
+    font-size:23px; margin-bottom: 16px;
+}
+
+#contents a:hover {color: gray;}
+@media(max-width: 680px){
+    #contents h1{
+        font-size: 50px;
+    }
+    #contents p{
+        font-size:20px;
+    }
+}
+
+
+
+
+
+    /*sec1 */
+    
+.sec1 {padding: 70px 100px ;text-align: center; }
+.sec1 h1 {font-size:30px; }
+.sec1 h1,h3,p{font-family: 'Questrial', sans-serif;}
+
+
+.header {padding:20px 0px; position: sticky; top:0;background-color: white;width:100%}
+.sec1 .sec1_div{display: flex;
+align-items: center;}
+
+
+@media(max-width:800px){
+    .sec1_div{flex-wrap: wrap;text-align: center;}
+}
+.sec1 h1{padding-bottom: 30px;}
+.sec1 p{padding-bottom: 20px;}
+
+ /*sec2 */
+
+.sec2 {
+    background-color: #F8F8F8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sec2-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: black; 
+}
+
+.sec2 h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.sec2 p {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.sec2 button {
+    color: black;
+    border-color: black;
+    text-transform: none;
+    background: #FFF;
+    text-decoration: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 40px;
+    font-family: 'Questrial';
+}
+
+.sec2 button:hover {
+    box-shadow: 0 2px 2px 0 rgba(0, 0,0, 0.3), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:680px){
+    .sec2 h2{font-size: 22px;}
+    .sec2 p {font-size: 14px;}
+    .sec2 button {width: 80px; height: 30px;}
+}
+
+
+
+/*footer */
+footer{background-color: black; }
+.footercon{width: 100%;
+padding: 70px 30px 20px; }
+.icons{display: flex; justify-content: center;}
+.icons a{
+    text-decoration: none; padding: 10px;
+    background-color: white; margin: 10px;
+    border-radius: 50%;
+}
+.icons a i{
+    font-size:2em; color: black; opacity: 0.9;
+}
+.icons a:hover{
+    background-color: black; transition: 0.5;
+}
+.icons a:hover i{color: white;transition: 0.5s;}
+.footernav{margin: 30px 0;}
+.footernav ul{display: flex; justify-content: center;}
+.footernav ul li a{color: white; margin: 20px; text-decoration: none;
+font-size: 1.3em; opacity: 0.7; transition: 0.5s;}
+.footernav ul li a:hover{opacity: 1;}
+.footerbottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerbottom p{color: white;}
+
+@media(max-width:680px){
+    .footernav ul{flex-direction: column;}
+     .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px; 
+        
+     }
+}
+     
+/*about */
+
+.about{ text-align: left;  }
+.about h1{text-align: left; font-size: 40px;}
+
+.about img{float: left; margin-right: 50px; }
+.about h1{font-size:30px; font-family: 'Dancing Script', cursive;
+background-color: #947CC2;color: aliceblue;}
+.about p{ color: black; font-family: 'Questrial';margin-right: 70px; margin-bottom: 45px; }
+
+.button-base:hover{
+    box-shadow: 0 2px 2px 0 rgba(0, 0,0, 0.3), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.button-base{
+    margin-bottom: 10px;
+    color: black;
+    border-color: black;
+    text-transform: none; 
+    box-sizing: border-box;
+    box-sizing: border-box;
+    background: white;
+    vertical-align: center;
+    text-decoration: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+    width: 100px;height: 30px;
+    font-family: 'Questrial'
+}
+@media(max-width:680px){
+    .about h1{text-align: center;background-color: black;color:white ;}
+  .about p{text-align:center;margin:20px 20px; }
+  .about img{display: block; margin: 0 auto;
+    width: 680px; max-width: 100%; margin: 0 auto; }
+}
+
+/*community*/
+.chat{
+    width: 98%;
+    background-color:white ;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat h1 {
+    text-align: center;
+     margin-bottom: 10px; 
+     color: #947CC2;
+}
+
+.chat {
+    border: 1px solid gainsboro;
+    padding: 10px; margin-bottom: 10px;
+    border-radius: 5px; font-family: 'Questrial', sans-serif;
+}
+
+
+textarea {
+    width: 98%;
+    height: 60px;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.sendbtn {
+    width: 99.7%;
+    padding: 10px;
+    background-color: #947CC2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sendbtn:hover {
+    background-color:black;
+}
+
+  
+
+
+/*nav search*/
+.box{margin: auto;margin-top: 20%;
+position: relative; width: 300px;
+height: 42px; border: 3.5px solid black;
+padding: 0px 10px;
+border-radius: 50px;
+margin-top: 3px; }
+.bbb{width: 100%;
+height: 100%; vertical-align: middle;}
+.search{
+    border: none;
+    height: 100%;
+    padding: 0px 5px;
+    border-radius: 50px; font-size: 18px;
+    font-family: 'Questrial', sans-serif;
+}
+.search:focus{outline: none;}
+
+/*sell & recipe*/
+.container{
+    font-family: 'Questrial', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Questrial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+.container .title{
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: gray;
+    text-align: center;
+}
+.container .products-container{display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap: 1rem;}
+.container .products-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background:white;
+    box-shadow: 0 .5rem 1rem gainsboro;
+    outline: .1rem solid gainsboro;
+    outline-offset:-1.5rem ;
+}
+.container .products-container .product img{
+    height: 25rem;}
+.container .products-container .product:hover{
+    outline: solid black;
+    outline-offset: 0;
+}
+.container .products-container .product h3, .price{
+    font-size: 20px;
+}
+.container .products-container .product h1{display: none;}
+.container .products-container .product hr{display: none;}
+/*recipe*/
+
+    
+#recipe:hover img{ display: none;}
+#recipe:hover h3{display: none;}
+#recipe:hover h1{display:block;opacity: 1; color: gray;}
+#recipe:hover hr{display:block;opacity: 1;}    
+
+
+
+
+
+/*buy now*/
+label{z-index: 3;}
+.center,.content{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+   
+}
+#click{visibility: hidden;}
+.content{opacity: 0; visibility: hidden;}
+#click:checked~.content{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.click-me{
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: gray;
+    border: 1px solid gray; color: white;
+    text-align: center; font-size: 22px;
+    line-height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.click-me:hover{
+    background-color: black;
+}
+.content{
+    width: 400px;height: 500px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.4) ;
+    top: 50%; left: 50%;
+   
+}
+.head{
+    height: 68px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.head h2{
+    color: white;
+    padding-left: 32px;
+    font-weight: normal;
+}
+
+.xi-won{
+    font-size: 50px;
+    color: black; font-size: 50px;
+    margin: 30px 0 0 160px;
+    font-weight:bolder;
+    height: 80px; width: 80px;
+    border: 4px solid black;
+    text-align: center;
+    padding-top:13px ;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.center p{padding-top: 10px; 
+font-size: 19px;
+color: black; text-align: center;
+padding-top: 10px;}
+
+.close-btn{
+    position: absolute;
+    bottom: 12px; right: 25px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.buybtn{position: absolute;
+    bottom: 12px; right: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 12px;
+    font-size: 18px;cursor: pointer;
+    background-color: black;}
+
+.close-btn:hover{
+    background-color: black; color: white;
+    transition: .5s;
+}
+.buybtn:hover{background-color: white; color: black;
+    transition: .5s;}
+
+
+
+
+/*로그인*/
+
+
+
+.log {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.log h1 {
+    margin-bottom: 20px;
+    
+}
+
+.input-box {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.save {
+    margin-bottom: 15px; 
+    margin-right: 40px;
+   
+}
+
+
+.loginbtn {
+    width: 80%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.find {
+    text-align: center;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.find p {
+    margin: 0;
+}
+
+
+
+/*셀푸터*/
+
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 60px;
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+	justify-content: space-around; 
+    font-family: 'Questrial', sans-serif;
+}
+
+
+.seller {
+    flex: 1;
+}
+
+
+.seller h5 {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.seller ul {
+    list-style: none;
+    padding: 0;
+}
+
+.seller li {
+    margin-bottom: 0.5px;
+}
+
+
+@media(max-width:680px){
+    .footer {text-align: left;
+        flex-direction: column;
+    }
+}
